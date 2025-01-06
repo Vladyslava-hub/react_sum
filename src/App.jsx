@@ -1,12 +1,15 @@
+// src/App.jsx
 import React from 'react';
+import './App.scss';
 // eslint-disable-next-line import/no-unresolved, import/extensions
-import { Sum } from '../components/Sum';
+import { Sum } from './components/Sum';
 
-// eslint-disable-next-line no-unused-vars
-const App = () => {
-  return (
-    <div>
-      <Sum a={2} b={3} />
-    </div>
-  );
-};
+export const App = () => (
+  <>
+    <Sum a={2} b={3} />
+    <Sum a={-5} b={5} />
+    <Sum a={10} b={0} />
+    <Sum a={0} b={5} />
+    <Sum a={0} b={0} />
+  </>
+);
