@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 // eslint-disable-next-line import/no-unresolved, import/extensions
-import { Sum } from './components/Sum'; // Переконайтеся, що правильно вказуєте шлях до компонента
+import { Sum } from 'src/components/Sum'; // Переконайтеся, що правильно вказуєте шлях до компонента
 
 export const App = () => (
   <div>
