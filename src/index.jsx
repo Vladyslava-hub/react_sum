@@ -1,7 +1,6 @@
-// src/index.jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { App } from './App'; // Імпортуємо App через named export
+import { createRoot } from 'react-dom/client';
 
-// eslint-disable-next-line react/no-deprecated
-ReactDOM.render(<App />, document.getElementById('root'));
+// eslint-disable-next-line import/named
+import { App } from './App';
+
+createRoot(document.getElementById('root')).render(<App />);
